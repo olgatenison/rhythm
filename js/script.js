@@ -2,8 +2,6 @@
 
 const reviewsSwiper = document.querySelector('.swiper-reviews');
 
-console.log(reviewsSwiper)
-
 if (reviewsSwiper) {
 	const swiper = new Swiper('.swiper-reviews', {
 		// Optional parameters
