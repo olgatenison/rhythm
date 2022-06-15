@@ -392,7 +392,7 @@ li {
 /* ----------------------------------------------- */
 .categories__main {}
 .categories {
-    padding-top: 90px;
+    padding-top: 60px;
 	padding-bottom: 110px;
 }
 .categories__container {}
@@ -443,7 +443,11 @@ li {
 }
 .item-category__image img{
 	transition: all 0.3s ease 0s;
-	position: absolute;width: 100%;height: 100%;top: 0;left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 	object-fit: cover;
 }
 @media (max-width: 1230px){
@@ -468,11 +472,11 @@ li {
 }
 @media (max-width: 767.98px) {
 	.categories {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	.categories__title {
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 	}
 }
 @media (max-width: 479.98px) {
@@ -483,8 +487,8 @@ li {
 }
 /* ---------------------------------------------- */
 .brands {
-    padding-top:110px;
-	padding-bottom: 180px;
+    padding-top:60px;
+	padding-bottom: 120px;
 }
 .brands__container {}
 .brands__title {
@@ -507,28 +511,32 @@ li {
 @media (max-width: 991.98px){
 	.brands {
 		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-bottom: 70px;
 	}
 	.brands__title {
-		margin-bottom: 40px;
+		margin-bottom: 60px;
 	}
 	.brands__items {
+		padding-left: 50px;
+		padding-right: 50px;
 		row-gap: 50px;
 		grid-template-columns: repeat(3, auto);
 	}
 }
 @media (max-width: 767.98px) {
 	.brands {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 60px;
+		padding-bottom: 100px;
 	}
 	.brands__title {
-		margin-bottom:20px;
+		margin-bottom:50px;
 	}
 }
 @media (max-width:600px) {
 	.brands__items {
-		row-gap: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		row-gap: 30px;
 		justify-content: center;
 		grid-template-columns: repeat(2, auto);
 	}
@@ -590,11 +598,11 @@ li {
 }
 @media (max-width: 991.98px) {
 	.why {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 80px;
+		padding-bottom: 80px;
 	}
 	.why__items {
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: repeat(3, auto);
 	}
 }
 @media (max-width: 767.98px) {
@@ -605,11 +613,14 @@ li {
 		justify-content: stretch;
 		grid-template-columns: repeat(1, auto);
 	}
+	.item-why__title {
+		margin-bottom: 80px;
+	}
 }
 /* --------------------------------------- */
 .reviews {
 	padding-top: 120px;
-	padding-bottom:180px;
+	padding-bottom:100px;
 }
 .reviews__container {}
 
@@ -714,13 +725,14 @@ li {
 @media (max-width: 991.98px) {
 	.reviews {
 		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-bottom: 100px;
 	}
 	.reviews__title {
 		margin-bottom: 50px;
 	}
 	.slide-swiper-reviews__body{
-		padding-left: 15px;
+		padding-left: 20px;
+		padding-top: 20px;
 	}
 	.slide-swiper-reviews {
 		flex-direction: column;
@@ -739,8 +751,8 @@ li {
 }
 @media (max-width: 767.98px) {
 	.reviews {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	.reviews__title {
 		margin-bottom: 30px;
@@ -772,7 +784,7 @@ li {
 
 /* ----------------------------------- */
 .favorite {
-	padding-bottom: 120px;
+	padding-bottom: 50px;
 }
 .favorite__container {
 	display: flex;
@@ -811,13 +823,18 @@ li {
 }
 @media (max-width: 991.98px) {
 	.favorite {
-		padding-bottom: 50px;
+		padding-bottom: 40px;
+		
+
 	}
 	.favorite__container {
 		flex-direction: column;
+		justify-content:center;
+		align-items: center;
 	}
 	.favorite__title {
 		font-size: 38px;
+		max-width: 80%;		
 	}
 	.favorite__title:not(:last-child) {
 		margin-bottom:25px;
@@ -826,6 +843,12 @@ li {
 @media (max-width: 767.98px) {
 	.favorite {
 		padding-bottom:30px;
+	}
+	
+}
+@media (max-width: 379.98px) {
+	.favorite__images{
+		max-width: 300px;	
 	}
 	
 }
@@ -873,7 +896,7 @@ li {
 	padding-left: 44px;
 }
 .contacts-footer__link:hover {
-	text-decoration: underline;
+	text-decoration: #000000;
 }
 
 .contacts-footer__link_mail {
@@ -929,6 +952,10 @@ li {
 }
 .social-footer__item {}
 
+.social-footer__item:hover{
+	color: #000;
+}
+
 .footer__copy {
 	padding-top: 80px;
 	text-align: center;
@@ -942,9 +969,11 @@ li {
 	.body-footer {
 		flex-wrap: wrap;
 		justify-content: space-between;
+		
 	}
 	.body-footer__column:first-child {
 		flex: 1 1 100%;
+		
 	}
 	.body-footer__column_full{
 		flex: 0 1 50%;
@@ -959,4 +988,12 @@ li {
 	.footer__copy {
 		padding-top: 50px;
 	}
+}
+@media (max-width: 379.98px) {
+	.body-footer__social {
+		max-width: 50px;
+	}
+	.social-footer__items{
+		flex-direction: column;
+		
 }
